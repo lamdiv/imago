@@ -13,7 +13,7 @@ class Display extends Component {
 
 
     onTextSubmit = async(item) =>{
-        const response = await axios.get(`https://api.unsplash.com/search/photos?query=${item}&client_id=eI-YBOw9gLWoTT9COIMVTXjZMReebSzCagXbCWs3OnE&per_page=28`)
+        const response = await axios.get(`https://api.unsplash.com/search/photos?query=${item}&client_id=eI-YBOw9gLWoTT9COIMVTXjZMReebSzCagXbCWs3OnE&per_page=30`)
         this.setState({
             results: response.data.results
         })
